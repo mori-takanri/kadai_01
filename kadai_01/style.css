@@ -1,0 +1,246 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+ 
+ body{
+  background: green
+  text-align: center;
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+.containar{
+  width: 150px;
+  margin: auto;
+}
+
+h1,h2{
+  background: lightgray;
+}
+
+h1,h2,.handWrapper{
+  border: solid 5px rgb(105, 105, 105);
+
+}
+
+
+p {
+  font-size: 200%;
+  line-height: 200%;
+  color: #333;
+}
+
+
+.outcome{
+  border-radius: 20px;
+  margin: 0 0 50px;
+  font-size: 40px;
+  line-height: 50px;
+  background: lightgray;
+  border: solid 5px dimgray;
+
+  
+}
+
+.board{
+  
+  justify-content: space-between;
+
+  background: azure;
+}
+
+.penel{
+  background: lavender;
+  width: 200px;
+  line-height: 50px;
+}
+
+h1{
+  border-radius: 10px;
+  margin: 30 0 0px;
+  line-height: 30px;
+  font-size: 250%
+}
+
+
+  
+h2{
+ border-radius: 20px 20px 0 0;
+  margin: 0;
+  text-align: center;
+  line-height: 40px;
+}
+
+.handWrapper{
+  line-height: 130px;
+  font-size: 50px;
+  text-transform:capitalize ;
+  text-align: center;
+  
+  
+}
+/* button{ */
+.hand{
+  border-radius: 20px;
+  display: block;
+  background: lightgray;
+  margin: 10px auto;
+  width: 140px;
+  font-size: 20px;
+  line-height: 30px;
+  border-top-width: 0;
+}
+.rock{
+  background:gold
+}
+
+.paper{
+  background: lightgreen;
+}
+
+.scissors{
+  background: lightblue;
+}
+
+.outcome{
+  line-height: 100px;
+  font-size: 100px;
+  text-transform:capitalize ;
+  background: lightblue;
+  text-align: center;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("https://lorempixel.com/640/480/abstract/6/");
+  z-index:2;
+}
+
+#title h1 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+}
+
+#slide1:before {
+  background-image: url("https://lorempixel.com/640/480/abstract/4/");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide2 {
+  background-image: url("https://lorempixel.com/640/480/abstract/3/");
+  z-index:2;
+}
+
+#slide3:before {
+  background-image: url("https://lorempixel.com/640/480/abstract/5/");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide4 {
+  background: #222;
+}
+
+ul{
+  padding: 0;
+  border-top: 1px solid #000000;
+  display:table;  /* 定義 */
+  table-layout: fixed;
+  width:100%;
+}
+li{
+  list-style-type:none;
+  border: 1px solid #666;
+  background-color: #FFF;
+  display:table-cell;  /* 定義 */
+  cursor: pointer;
+}
+li:hover{
+  background: #0066CC;
+  color:#fff;
+}
+textarea{
+margin: 3%;
+width: 95%;
+height: 230px;
+font-size:80%;
+box-shadow: 3px 3px 3px 3px #555;
+}
+
+
+
